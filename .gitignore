@@ -1,0 +1,38 @@
+# ==========================================
+# EASYSHARE MONOREPO .GITIGNORE
+# ==========================================
+
+# --- Global ---
+.DS_Store
+
+# --- Android / Java ---
+*.iml
+.gradle/
+local.properties
+.idea/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Security: Never upload your signing keys!
+*.jks
+*.keystore
+key.properties
+
+# Exclude binaries (Upload these to GitHub Releases instead)
+*.apk
+*.aab
+
+# --- Python / Windows ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# PyInstaller / Executable build artifacts
+dist/
+*.spec
+*.exe
